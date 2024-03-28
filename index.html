@@ -1,0 +1,802 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Happenings, News Blogs | The Express Tribune </title>
+    <link rel="icon" href="https://i.tribune.com.pk/assets/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+    <div class="container-fluid custom-bg-black">
+      <div class="container custom-bg-black">
+        <div id="top-bar" class="container-fluid custom-bg-black d-flex justify-content-between align-items-center">
+            <ul class="nav responsive-custom-margin d-flex justify-content-center">  <!--Top bar and its icons-->
+                <li class="nav-item ps-4">
+                  <a class="nav-link text-white custom-font px-2" href="#">EXPRESS NEWS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white custom-font px-2" href="#">URDU E-PAPER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white custom-font px-2" href="#">ENGLISH E-PAPER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white custom-font px-2" href="#">SINDHI E-PAPER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white custom-font px-2" href="#">CRICKET PAKISTAN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white custom-font px-2" href="#">EXPRESS LIFE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white custom-font px-2" href="#">CAMPUS GURU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white custom-font px-2" href="#">EXPRESS ENTERTAINMENT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white custom-font px-2" href="#">FOOD TRIBUNE</a>
+                  </li>
+              </ul>
+              <!-- icons for social media are given below -->
+              <ul class="nav display-none responsive-custom-margin d-flex justify-content-center">
+                <li class="nav-item ps-4"> <!--fb image-->
+                  <a class="nav-link text-white custom-font px-2 p-0" href="#"><img class="custom-image-size" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEX///8AAADLy8sxMTEqKiqvr68bGxvFxcXi4uIkJCTT09OMjIwNDQ2JiYmTk5OQkJD4+Pimpqbx8fFlZWXa2trp6em9vb23t7eZmZl4eHiAgIBOTk5EREQ7Ozufn59xcXFWVlYTVtYBAAACeUlEQVR4nO3ca2+CQBCFYQRBEFRA8FKv//9XNta0qVTrsGwyh8l5v5PME0C2C2kQMMYYY4wxxhgT1Daz+LzM88Wt/N7q3vKrXa49oqwmXh+OpyhLiqKY3CqeNdEeU1CziJI74V3ak76rrqYixwgw7VkuAcfUG9nVNQZMc+lHAcaU26ivBRZT75LeFlRMnTtYQDF13vPWB8aUOxcKKGbjZoHEpI4WREx5MoRxvGEgMa2zBRCzN4RpXJ6WqJgBJwYOkx4NYc4DrjI0TLkeYEHDhEOuMjRM5bRaxsSUH0MsYJh00C0Dhgmd15iAmHiQBQxTGcKUK+HUp3w7f5L2/A+1soVZstUeVFIq2sM8NNpzimquAst0FOclCOaSxcxae0phoWB7uai0pxQWCl4sZVi/Wa+TYKa19pTCJJhIe0hpxKBGDGrEoEYMasSgRgxqxKBGDGpzwR4AKqaJO0m+y8q23aN+qjQ31OJp0um9ZTLpHvPraM0dtTiTDN+jmSVMaglTWsIoWoj5r6MlzN4SZmkJo/qywzdmYwmj+cz0jlF9c0PM6yJLmKslzEVznekbs7CEOVvCqD4zfWM0/2j2jgkNYQrdL7f8Yk6qSzPPmENrCLO2hPnQ/dzJL2an+sz0jKl0MQM/ye4Uq1qCNpw9FFaCU5XNOkd9p3v//83UmzNiUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlCzhRH8Q5DxYARnJtEeUlqZCtIecgR9AkwiNNtKeAq3AAAAAElFTkSuQmCC" alt="fb-icon"></a>
+                </li>
+                <li class="nav-item">  <!--X(twitter) image-->
+                    <a class="nav-link text-white custom-font px-2 p-0" href="#"><img class="custom-image-size" src="data:image/png;base64,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" alt="fb-icon"></a>
+                  </li>
+                  <li class="nav-item"> <!--Youtube image-->
+                    <a class="nav-link text-white custom-font px-2 p-0" href="#"><img class="custom-image-size" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIklpr5QSjGoae2HWglxvtUZPeE_TQ2mttAQ&usqp=CAU" alt="fb-icon"></a>
+                  </li>
+              </ul>
+        </div>  <!--Top bar is finished here-->
+      </div>
+    </div>
+    <div class="container">
+        <div class="container-sm d-flex justify-content-center mt-2 mx-2 flex-column pb-2 px-0 border-bottom border-3 border-dark">
+            <div class="container d-flex justify-content-center">
+                <a href="index.html"><img src="https://i.tribune.com.pk/media/images/logos/tribune-logo.webp" width="214" height="53" alt="Tribune.com.pk" class="header-logo-bx"></a>
+            </div>
+            <ul class="d-flex justify-content-center list-style-none nav">
+                <li><a style="font-size: 12px" class="text-uppercase text-decoration-none text-dark" href="https://tribune.com.pk/epaper" target="_blank">Today's Paper | </a></li>
+                <li class="text-uppercase pt-1" style="font-size: 12px;"> March 24, 2024 </b>|</li>
+                <li><a style="font-size: 12px" class="text-uppercase text-decoration-none text-dark" href="/advertise/" target="_blank">Advertise</a></li>
+                </ul>
+        </div> 
+      </div>
+        <!-- logi is given above-->
+        <div class="container my-0 border-2 py-1 border-bottom">
+            <nav class="navbar navbar-expand-lg p-0 bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand custom-font-for-main-nav text-danger" href="#">HOME</a>
+                  <a class="navbar-brand custom-font-for-main-nav text-danger" href="#">LATEST</a>
+                  <a class="navbar-brand custom-font-for-main-nav" href="#">PAKISTAN</a>
+                  <div class="dropdown"> <!--dropdown additionally added-->
+                    <button class="btn btn-light dropdown-toggle custom-visibility-nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" aria-current="page" href="#">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">WORLD</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">GAZA</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">OPINION</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">SCI-TECH</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">LIFE & STYLE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">T-MAGZINE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">T.EDIT</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">SPORTS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">VIDEOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">OTHER</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">PODCAST</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark custom-font-for-main-nav" href="#">WEBINAR</a>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" aria-current="page" href="#">BUSINESS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">WORLD</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">GAZA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">OPINION</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">SCI-TECH</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">LIFE & STYLE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">T-MAGZINE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">T.EDIT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">SPORTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">VIDEOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">OTHER</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">PODCAST</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark custom-font-for-main-nav" href="#">WEBINAR</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+          </div>
+    </header> 
+        <main style="width: 100%;"> <!-- main portion of the website-->
+          <div class="container"> <!-- first main news section-->
+            <div id="main-news"  class="container d-flex justify-content-center mt-3 mx-0 px-0">
+                <div class="container-fluid mx-0 px-0"> <!--first news section-->
+                    <div class="container-fluid"><!--first news-->
+                        <div class="container-fluid mx-0 px-0 custom-cursor-pointer">
+                            <h2 class="custom-heading-font">Restarting trade with India stays elusive</h2>
+                        </div>
+                        <div class="container-fluid mx-0 px-0 custom-cursor-pointer">
+                            <img id="truck-image" src="https://i.tribune.com.pk/media/images/Cover1644312896-0/Cover1644312896-0-400x230.webp" alt="truck-image" style="width: 500px;">
+                        </div>
+                        <div class="container-fluid mx-0 px-0 pt-1">
+                            <p class="custom-caption-font mb-2" style="font-size:13px">No consensus among stakeholders yet regarding restoration of trade relations between both countries</p>
+                            <div class="container-fluid mx-0 px-0">
+                                <p class="text-muted" style="font-size: 11px;">Kamran Yousaf | Updated 3 hours ago |</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="first-bullet-sec" class="container-fluid px-0 mx-0"> <!--first news bullet section starts from here-->
+                      <p class="text-danger text-underline custom-cursor-pointer" style="font-size: 12px;"><u>RELATED</u></p>
+                      <ul class="list-style-none px-0">
+                          <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--first news start-->
+                            <div class="d-inline">
+                                <img src="https://i.tribune.com.pk/media/images/UNSC-meeting-on-Gaza-ceasefire-resolution1711117712-0/UNSC-meeting-on-Gaza-ceasefire-resolution1711117712-0-100x90.webp" alt="Kremlin" style="width: 90px;">
+                            </div>
+                            <div class="d-inline">
+                                <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                  UN Security Council fails to pass US resolution calling for immediate ceasefire in Gaza
+                                  </h3>
+                                  <p class="text-muted ps-3" style="font-size: 11px;">Updated Mar 22, 2024</p>
+                            </div>
+                          </li>
+                          <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--second news start-->
+                            <div class="d-inline">
+                                <img src="https://i.tribune.com.pk/media/images/UNSC-US-Veto1708454554-0/UNSC-US-Veto1708454554-0-100x90.webp" alt="Kremlin" style="width: 90px;">
+                            </div>
+                            <div class="d-inline">
+                                <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                  US blocks ceasefire call with third UN veto in Israel-Hamas war
+                                  </h3>
+                                  <p class="text-muted ps-3" style="font-size: 11px;">Updated Feb 20, 2024</p>
+                            </div>
+                          </li>
+                          <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--third news start-->
+                            <div class="d-inline">
+                                <img src="https://i.tribune.com.pk/media/images/crisis1710658476-0/crisis1710658476-0-100x90.webp" alt="Kremlin" style="width: 90px;">
+                            </div>
+                            <div class="d-inline">
+                                <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                  Israel prepares return to ceasefire talks; UN says Gaza hunger crisis worsens
+                                  </h3>
+                                  <p class="text-muted ps-3" style="font-size: 11px;">Updated Mar 17, 2024</p>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+                <div id="second-sec" class="container-fluid px-0 mx-0 ms-4"> <!--scond news section starts from here-->
+                    <ul class="list-style-none px-0">
+                        <li class="d-flex border-2 border-bottom pb-2 custom-cursor-pointer"> <!--first news start-->
+                            <div class="d-inline">
+                                <img src="https://i.tribune.com.pk/media/images/Palestinian-children-northern-Gaza-Strip1711288528-0/Palestinian-children-northern-Gaza-Strip1711288528-0-100x90.webp" alt="GAZA" style="width: 90px;">
+                            </div>
+                            <div class="d-inline">
+                                <h3 class="custom-font-size-for-second-news-boxes ps-3"> Israel besieges two more Gaza hospitals, demands their evacuation, Palestinians say</h3>
+                            </div>
+                        </li>
+                        <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--second news start-->
+                          <div class="d-inline">
+                              <img src="https://i.tribune.com.pk/media/images/Atta-Tarar1710513304-0/Atta-Tarar1710513304-0-100x90.webp" alt="Atta-Tarrar" style="width: 90px;">
+                          </div>
+                          <div class="d-inline">
+                              <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                Tarar laments social media's fake news
+                                </h3>
+                          </div>
+                        </li>
+                        <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--third news start-->
+                          <div class="d-inline">
+                              <img src="https://i.tribune.com.pk/media/images/Pakistan-China-Flags1696259071-11711388332-0/Pakistan-China-Flags1696259071-11711388332-0-100x90.webp" alt="China" style="width: 90px;">
+                          </div>
+                          <div class="d-inline">
+                              <h3 class="custom-font-size-for-second-news-boxes ps-3"> China hails military ties with Pakistan</h3>
+                          </div>
+                        </li>
+                        <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--fourth news start-->
+                          <div class="d-inline">
+                              <img src="https://i.tribune.com.pk/media/images/FIA1623645848-01659847049-0/FIA1623645848-01659847049-0-100x90.webp" alt="FIA" style="width: 90px;">
+                          </div>
+                          <div class="d-inline">
+                              <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                FIA assures SC of withdrawing cases against journalists
+                                </h3>
+                          </div>
+                        </li>
+                        <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--fifth news start-->
+                          <div class="d-inline">
+                              <img src="https://i.tribune.com.pk/media/images/WhatsApp-Image-2024-03-25-at-6-51-03-PM1711374682-0/WhatsApp-Image-2024-03-25-at-6-51-03-PM1711374682-0-100x90.webp" alt="Kremlin" style="width: 90px;">
+                          </div>
+                          <div class="d-inline">
+                              <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                Kremlin refuses to comment on Da’ish links to Moscow attack
+                                </h3>
+                          </div>
+                        </li>
+                        <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--sixth news start-->
+                          <div class="d-inline">
+                              <img src="https://i.tribune.com.pk/media/images/IHC1660123282-0/IHC1660123282-0-100x90.webp" alt="Kremlin" style="width: 90px;">
+                          </div>
+                          <div class="d-inline">
+                              <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                No leniency for sharing objectionable pictures: IHC
+                                </h3>
+                          </div>
+                        </li>
+                        <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--seventh news start-->
+                          <div class="d-inline">
+                              <img src="https://i.tribune.com.pk/media/images/WhatsApp-Image-2024-01-19-at-12-38-52-AM1711390116-0/WhatsApp-Image-2024-01-19-at-12-38-52-AM1711390116-0-100x90.webp" alt="Kremlin" style="width: 90px;">
+                          </div>
+                          <div class="d-inline">
+                              <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                Pakistan welcomes UNSC resolution seeking truce in Gaza
+                                </h3>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="third-sec" class="container-fluid px-0 ms-4 border-2 border-end" style="width: 310px"> <!--third news section-->
+                  <div class="container-fluid px-0 border-2 border-bottom"><!--first news-->  <!-- id s3n1 mean sec 3 news 1-->
+                    <div id="s3n1" class="container ps-0 pe-3 custom-cursor-pointer s3n1"> 
+                      <img src="https://i.tribune.com.pk/media/images/FIA1623645848-01659847049-0/FIA1623645848-01659847049-0-200x150.webp" alt="news text" style="width: 280px">
+                      <h3 id="fia" class="custom-heading-font">FIA assures SC of withdrawing cases against journalists</h3>
+                    </div>
+                    <div class="container-fluid px-0"> <!-- time section-->
+                      <p class="text-muted" style="font-size: 11px;">Updated 4 hours ago</p>
+                    </div>
+                  </div>
+                  <div class="container-fluid px-0 border-2 border-bottom mt-3"><!--second news-->  <!-- id s3n2 mean sec 3 news 2-->
+                    <div id="s3n2" class="container ps-0 pe-3 custom-cursor-pointer s3n1"> 
+                      <img src="https://i.tribune.com.pk/media/images/Shehbaz-APP1711372710-0/Shehbaz-APP1711372710-0-200x150.webp" alt="news text" style="width: 280px">
+                      <h3 id="fia" class="custom-heading-font">PM directs swift action against tax defaulters, evaders</h3>
+                    </div>
+                    <div class="container-fluid px-0"> <!-- time section-->
+                      <p class="text-muted" style="font-size: 11px;">Updated 6 hours ago</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div id="2nd-main-sec" class="container d-flex justify-content-between mt-3 border-2 border-end"> <!--Second section of main starts here-->
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--first card-->
+              <img src="https://i.tribune.com.pk/media/images/1050565-uspakistansi_x-1455901467/1050565-uspakistansi_x-1455901467.jpg" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Pakistan to seek US waiver for Iran gas pipeline project</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 2 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Petroleum minister Musadik Malik says the govt will present its case to the US</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--second card-->
+              <img src="https://i.tribune.com.pk/media/images/arabicdesigndresslahorepoliceasp1710789187-0/arabicdesigndresslahorepoliceasp1710789187-0-196x127.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Ichhra incident accused granted bail</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 3 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Lahore police arrested accused for harassing a woman wearing a shirt with Arabic script printed on it on February 24</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--third card-->
+              <img src="https://i.tribune.com.pk/media/images/1444844-itx-1498456370/1444844-itx-1498456370.png" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Thousands of freelancers set to benefit as Pakistan’s largest IT park gets go-ahead</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 5 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Covering an area of 3.3 acres, the ambitious project receives approval from the SIFC</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--fourth card-->
+              <img src="https://i.tribune.com.pk/media/images/Iran-fishermen1711376479-0/Iran-fishermen1711376479-0-196x127.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Pakistan Navy rescues eight Iranian fishermen</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 6 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Timely and successful operation exemplifies Navy's capability to deal with all sorts of situations at sea, says ISPR</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="s3" class="container d-flex justify-content-center pt-2">   <!--third section of main section-->
+            <div class="container-fluid ps-0 me-2"> <!--first part of third section-->
+              <div class="container-fluid d-flex px-0 justify-content-between border-2 border-bottom border-black">
+                <h3 class="custom-heading-font fs-5 fw-semibold mb-1 custom-cursor-pointer">BUSINESS</h3>
+                <h3 class="custom-heading-font fs-6 fw-semibold mb-1 custom-cursor-pointer">MORE FROM BUSINESS</h3>
+              </div>
+              <div class="container-fluid d-flex justify-content-center pt-2">
+                <img src="https://i.tribune.com.pk/media/images/11711401976-0/11711401976-0-400x230.webp" class="img-fluid custom-cursor-pointer" alt="..." style="width: 500px;">
+              </div>
+              <div class="container-fluid mt-2"> <!-- caption for the above images-->
+                <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">Banks to get preferential treatment</h3>
+                <p class="text-muted mb-2" style="font-size: 11px;">Shahbaz Rana | Updated 11 hours ago | </p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Govt mulls settling high interest on $88m PIA loan without restructuring</p>
+              </div>
+            </div>
+            <div id="s3n2" class="container-fluid border-2 ps-0 ms-2"> <!--second part of third section-->
+              <div class="container-fluid d-flex px-0 justify-content-between border-bottom border-black border-2">
+                <h3 class="custom-heading-font fs-5 fw-semibold mb-1 custom-cursor-pointer d-inline">LIFE & <p class="text-danger d-inline">STYLE</p> </h3>
+                <h3 class="custom-heading-font fs-6 fw-semibold mb-1 custom-cursor-pointer">MORE FROM BUSINESS</h3>
+              </div>
+              <div class="container-fluid d-flex justify-content-center pt-2">
+                <img src="https://i.tribune.com.pk/media/images/Untitled-design---2024-03-26T165948-6381711458730-0/Untitled-design---2024-03-26T165948-6381711458730-0-400x230.webp" class="img-fluid custom-cursor-pointer" alt="..." style="width: 500px">
+              </div>
+              <div class="container-fluid mt-2"> <!-- caption for the above images-->
+                <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">From Dua Lipa to Aima Baig, is 2024 another year of cherry cola hair?</h3>
+                <p class="text-muted mb-2" style="font-size: 11px;">Manahil Tahira | Updated 2 hours ago | </p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">After reigning supreme on runways and TikToks last year, the iconic 90s Shakira hair is here to stay</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="4th-main-sec" class="container d-flex justify-content-between mt-3 border-2 border-end"> <!--fourth section of main starts here-->
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--first card-->
+              <img src="https://i.tribune.com.pk/media/images/1108698-PSX-1464001679/1108698-PSX-1464001679.jpg" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">SLG first logistics company to list on PSX</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 15 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Slated to offer 50 million shares at minimum (floor price) of Rs12 per share to raise Rs600 million</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--second card-->
+              <img src="https://i.tribune.com.pk/media/images/993431-Technologycopy-1447828365/993431-Technologycopy-1447828365.jpg" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">SIFC approves setting up of largest IT park</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 15 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">To be established in Islamabad’s G-10 sector, covering area of 3.3 acres</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--third card-->
+              <img src="https://i.tribune.com.pk/media/images/Screenshot-(844)1711448837-0/Screenshot-(844)1711448837-0-196x127.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">It is all about your performance, not who you are and who your father is: Zaviyar Ejaz</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 7 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Actor confessed to feeling ‘intimidated’ working with father and veteran actor Nauman Ejaz</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--fourth card-->
+              <img src="https://i.tribune.com.pk/media/images/SS-(1)1711437339-0/SS-(1)1711437339-0-196x127.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Only you know your struggles: Saboor Ali celebrates Sajal Ali's Tamgha-e-Imtiaz honour</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 10 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">In an emotional post on Instagram, actor shared cherished moments captured with her sister</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="5th-main-sec" class="container d-flex justify-content-between mt-3 border-2 border-end"> <!--fifth section of main starts here-->
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--first card-->
+              <img src="https://i.tribune.com.pk/media/images/11685738584-0/11685738584-0-196x127.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Govt urged to protect auto industry</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 15 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">PAMA’s Khan says import of used vehicles has increased by staggering 641% this year</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--second card-->
+              <img src="https://i.tribune.com.pk/media/images/PTCL-Logo1641831485-0/PTCL-Logo1641831485-0-196x127.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Competitors raise concern over telecom merger</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 15 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">CCP says reservations about PTCL-Telenor merger can delay due diligence</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--third card-->
+              <img src="https://i.tribune.com.pk/media/images/hareemshah1711449079-0/hareemshah1711449079-0-196x127.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Hareem Shah seeks police protection following 'harassment' incident in UK</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 8 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Social media star approaches law enforcement following threats and files defamation suit</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--fourth card-->
+              <img src="https://i.tribune.com.pk/media/images/WhatsApp-Image-2024-03-26-at-11-15-561711452532-0/WhatsApp-Image-2024-03-26-at-11-15-561711452532-0-196x127.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Everyone said my Diyar-e-Dil role would be career suicide: Hareem Farooq</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 7 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Actor and producer recalled how she went against everyone’s advice to play an older character </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="6th-main-sec" class="container d-none px-0"> <!--sixth section of main-->
+            <div class="container-fluid d-flex px-0 justify-content-between border-3 border-bottom border-black"> <!--container for headings-->
+              <h3 class="custom-heading-font fs-5 fw-semibold mb-1 custom-cursor-pointer">PAKISTAN</h3>
+              <h3 class="custom-heading-font fs-6 fw-semibold mb-1 custom-cursor-pointer">MORE FROM PAKISTAN</h3>
+            </div>
+            <div class="container-fluid px-0"> <!--container for main content-->
+              <div class="container row"> <!--bootstrap grid-->
+                <div id="r1c1" class="col-5"> <!--first column row 1 column 1-->
+                  <div class="container-fluid d-flex justify-content-center pt-2">
+                    <img src="https://i.tribune.com.pk/media/images/PM-Shehbaz-Sharif1709746066-0/PM-Shehbaz-Sharif1709746066-0-400x230.webp" class="img-fluid custom-cursor-pointer" alt="..."
+                    style="width: 500px;">
+                  </div>
+                  <div class="container-fluid mt-2"> <!-- caption for the above images-->
+                    <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">PM Shehbaz chairs security meeting following Dasu attack</h3>
+                    <p class="text-muted mb-2" style="font-size: 11px;">Our Correspondent | Updated 7 minutes ago | </p>
+                    <p class="custom-caption-font mb-2" style="font-size:13px">Army chief among top security, government officials in attendance</p>
+                  </div>
+                  <div id="first-bullet-sec" class="container-fluid px-0 mx-0"> <!--bullet of column 1 -->
+                    <p class="text-danger text-underline custom-cursor-pointer" style="font-size: 12px;"><u>RELATED</u></p>
+                    <ul class="list-style-none px-0">
+                        <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--first news start-->
+                          <div class="d-inline">
+                              <img src="https://i.tribune.com.pk/media/images/1198811-fc-1476429689/1198811-fc-1476429689.jpg" alt="Kremlin" style="width: 90px;">
+                          </div>
+                          <div class="d-inline">
+                              <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                Soldier martyred, four terrorists killed as security forces foil attack on Turbat naval base
+                                </h3>
+                                <p class="text-muted ps-3" style="font-size: 11px;">Updated Mar 26, 2024</p>
+                          </div>
+                        </li>
+                        <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--second news start-->
+                          <div class="d-inline">
+                              <img src="https://i.tribune.com.pk/media/images/AfghanChildrenEducationPic011701172745-0/AfghanChildrenEducationPic011701172745-0-100x90.webp" alt="Kremlin" style="width: 90px;">
+                          </div>
+                          <div class="d-inline">
+                              <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                Govt 'mapping' Afghans ahead of eviction push after Eid
+                                </h3>
+                                <p class="text-muted ps-3" style="font-size: 11px;">Updated 16 hours ago</p>
+                          </div>
+                        </li>
+                        <li class="d-flex mt-3 border-2 border-bottom pb-2 custom-cursor-pointer"> <!--third news start-->
+                          <div class="d-inline">
+                              <img src="https://i.tribune.com.pk/media/images/X-logo1708620875-0/X-logo1708620875-0-100x90.webp" alt="Kremlin" style="width: 90px;">
+                          </div>
+                          <div class="d-inline">
+                              <h3 class="custom-font-size-for-second-news-boxes ps-3"> 
+                                Must have ‘genuine’ reason to suspend X: IHC CJ
+                                </h3>
+                                <p class="text-muted ps-3" style="font-size: 11px;">Updated Mar 26, 2024</p>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="r1c2" class="col"> <!-- second column-->
+                  <div class="container-fluid d-flex justify-content-center pt-2"> <!--first news-->
+                    <img src="https://i.tribune.com.pk/media/images/ptibarristergoharelectionAFP1707431638-0/ptibarristergoharelectionAFP1707431638-0-198x140.webp" class="img-fluid custom-cursor-pointer" alt="..." width="300px">
+                  </div>
+                  <div class="container-fluid mt-2"> <!-- caption for the above images-->
+                    <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">PTI plans nationwide campaign for Imran’s release</h3>
+                    <p class="text-muted mb-2" style="font-size: 11px;">Updated 16 minutes ago </p>
+                    <p class="custom-caption-font mb-2" style="font-size:13px">Barrister Gohar says ongoing legal proceedings against PTI founder are part of concerted effort to detain him</p>
+                  </div>
+                  <div class="container-fluid d-flex justify-content-center pt-2"> <!--second news-->
+                    <img src="https://i.tribune.com.pk/media/images/PM1711449078-0/PM1711449078-0-198x140.webp" class="img-fluid custom-cursor-pointer" alt="..." width="300px">
+                  </div>
+                  <div class="container-fluid mt-2"> <!-- caption for the above images-->
+                    <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">PM announces incentives for top exporters, taxpayers</h3>
+                    <p class="text-muted mb-2" style="font-size: 11px;">Updated 26 hours ago </p>
+                    <p class="custom-caption-font mb-2" style="font-size:13px">Announces issuance of blue passports to 66 winners of tax and export excellence awards</p>
+                  </div>
+                </div>
+                <div id="r1c3" class="col"> <!--third column-->
+                  <div class="container-fluid d-flex justify-content-center pt-2"> <!--first news-->
+                    <img src="https://i.tribune.com.pk/media/images/Bisham-suicide-attack-Chinese1711448167-0/Bisham-suicide-attack-Chinese1711448167-0-198x140.webp" class="img-fluid custom-cursor-pointer" alt="..." width="300px">
+                  </div>
+                  <div class="container-fluid mt-2"> <!-- caption for the above images-->
+                    <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">Five Chinese killed in suicide blast</h3>
+                    <p class="text-muted mb-2" style="font-size: 11px;">March 26, 24 </p>
+                    <p class="custom-caption-font mb-2" style="font-size:13px">Dasu project staff targeted in Besham; 4 terrorists eliminated in DI Khan; attack on naval base in Turbat thwarted</p>
+                  </div>
+                  <div class="container-fluid d-flex justify-content-center pt-2"> <!--second news-->
+                    <img src="https://i.tribune.com.pk/media/images/IK1684838174-0/IK1684838174-0-198x140.webp" class="img-fluid custom-cursor-pointer" alt="..." width="300px">
+                  </div>
+                  <div class="container-fluid mt-2"> <!-- caption for the above images-->
+                    <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">Imran urges CJP to probe May 9 riots</h3>
+                    <p class="text-muted mb-2" style="font-size: 11px;">March 26, 24 </p>
+                    <p class="custom-caption-font mb-2" style="font-size:13px">Calls on CJP Isa to order retrieval of CCTV footage</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="7th-main-sec" class="container d-flex justify-content-between mt-3 border-2 border-end"> <!--seventh section of main starts here-->
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--first card-->
+              <img src="https://i.tribune.com.pk/media/images/1231709139807-0/1231709139807-0-198x140.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">PTI questions credibility of verdicts against Imran following judges' letter</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 1 hour ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Gauhar says ex-premier not afforded right to fair trial; asks SC to constitute larger bench on letter today</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--second card-->
+              <img src="https://i.tribune.com.pk/media/images/PM-Shehbaz,-COAS-Gen-Asim-Munir1711541233-0/PM-Shehbaz,-COAS-Gen-Asim-Munir1711541233-0-198x140.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">PM orders thorough probe into Besham incident, vows to bring culprits to justice</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 12 minutes ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Army chief says will fight terrorism till every terrorist casting an evil eye on Pakistan is eliminated</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--third card-->
+              <img src="https://i.tribune.com.pk/media/images/2555170-ptirallyx-1697970611-227-640x4801697972583-0/2555170-ptirallyx-1697970611-227-640x4801697972583-0-198x140.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">IHC allows PTI to hold rally in Islamabad</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 3 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Right of assembly can not be taken away, says IHC CJ</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--fourth card-->
+              <img src="https://i.tribune.com.pk/media/images/shehbazchineseembassyvisit1711457151-01711471601-0/shehbazchineseembassyvisit1711457151-01711471601-0-198x140.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">PM Shehbaz likely to visit China amid renewed terror threat</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 8 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Security of Chinese projects and nationals prioritised for Shehbaz's Beijing trip next month after attacks </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="8th-main-sec" class="container d-flex justify-content-center px-0 pt-2">   <!--eight section of main section-->
+            <div class="container-fluid ps-0 me-2 ms-0 mb-2"> <!--first part of eightth section-->
+              <div class="container-fluid d-flex px-0 justify-content-between border-2 border-bottom border-black">
+                <h3 class="custom-heading-font fs-5 fw-semibold mb-1 custom-cursor-pointer">OPINION</h3>
+                <h3 class="custom-heading-font fs-6 fw-semibold mb-1 custom-cursor-pointer">MORE FROM OPINION</h3>
+              </div>
+              <div id="s8p1" class="container-fluid d-flex justify-content-center pt-2"> <!-- this div contains two parts-->
+                <div class="container-fluid custom-cursor-pointer">
+                  <img src="https://i.tribune.com.pk/media/images/Editorial-Opinion-copy1/Editorial-Opinion-copy1-196x127.jpg" alt="...">
+                  <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">It's Bisham now</h3>
+                  <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated 7 hours ago </p>
+                </div>
+                <div class="container-fluid custom-cursor-pointer">
+                  <img src="https://i.tribune.com.pk/media/images/Tanzeela-Khalil1704567114-0/Tanzeela-Khalil1704567114-0-196x127.webp" alt="...">
+                  <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">Mission Divyastra</h3>
+                  <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated 7 hours ago </p>
+                </div>
+              </div>
+              <div id="s8p2" class="container-fluid d-flex justify-content-center pt-2"> <!-- this div contains two parts-->
+                <div class="container-fluid custom-cursor-pointer">
+                  <img src="https://i.tribune.com.pk/media/images/Editorial-Opinion-copy1/Editorial-Opinion-copy1-196x127.jpg" alt="...">
+                  <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">Ceasefire possibility</h3>
+                  <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated 7 hours ago </p>
+                </div>
+                <div class="container-fluid custom-cursor-pointer">
+                  <img src="https://i.tribune.com.pk/media/images/Abbas-Moosvi1639160773-0/Abbas-Moosvi1639160773-0-196x127.webp" alt="...">
+                  <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">Cult of individuality</h3>
+                  <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated 7 hours ago </p>
+                </div>
+              </div>
+              <div id="s8p3" class="container-fluid d-flex justify-content-center pt-2"> <!-- this div contains two parts-->
+                <div class="container-fluid custom-cursor-pointer">
+                  <img src="https://i.tribune.com.pk/media/images/Editorial-Opinion-copy1/Editorial-Opinion-copy1-196x127.jpg" alt="...">
+                  <h3 class="custom-heading-font fw-semibold fs-5 mb-1 custom-cursor-pointer">Undercutting Aitchison</h3>
+                  <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated 8 hours ago </p>
+                </div>
+                <div class="container-fluid custom-cursor-pointer">
+                  <img src="https://i.tribune.com.pk/media/images/Aftab-Ahmed-Khanzada1655671194-0/Aftab-Ahmed-Khanzada1655671194-0-196x127.webp" alt="...">
+                  <h3 class="custom-heading-font fw-semibold fs-5 mb-1 custom-cursor-pointer">Truth is the only solution</h3>
+                  <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated 8 hours ago </p>
+                </div>
+              </div>
+            </div>
+            <div id="s3n2" class="container-fluid border-2 ps-0 ms-2"> <!--second part of eightth section-->
+              <div class="container-fluid ps-0 me-2 mb-2"> <!--first part of eightth section-->
+                <div class="container-fluid d-flex px-0 justify-content-between border-2 border-bottom border-black custom-cursor-pointer">
+                  <h3 class="custom-heading-font fs-5 fw-semibold mb-1 custom-cursor-pointer">T.EDIT</h3>
+                  <h3 class="custom-heading-font fs-6 fw-semibold mb-1 custom-cursor-pointer">MORE FROM T.EDIT</h3>
+                </div>
+                <div id="s8p4" class="container-fluid d-flex justify-content-center custom-cursor-pointer pt-2"> <!-- this div contains two parts-->
+                  <div class="container-fluid">
+                    <img src="https://i.tribune.com.pk/media/images/31708981927-2/31708981927-2-196x127.webp" alt="...">
+                    <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">Makeup Mastery</h3>
+                    <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated March 07, 2024 </p>
+                  </div>
+                  <div class="container-fluid">
+                    <img src="https://i.tribune.com.pk/media/images/11708527669-0/11708527669-0-196x127.webp" alt="...">
+                    <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">Revolutionalising Runways</h3>
+                    <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated Feb 28, 2024 </p>
+                  </div>
+                </div>
+                <div id="s8p5" class="container-fluid d-flex justify-content-center pt-2 custom-cursor-pointer"> <!-- this div contains two parts-->
+                  <div class="container-fluid">
+                    <img src="https://i.tribune.com.pk/media/images/91708525838-8/91708525838-8-196x127.webp" alt="...">
+                    <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">
+                      From Disorder to Tranquillity: The Art of Minimalist Living</h3>
+                    <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated Feb 26, 2024 </p>
+                  </div>
+                  <div class="container-fluid custom-cursor-pointer">
+                    <img src="https://i.tribune.com.pk/media/images/71708525839-6/71708525839-6-196x127.webp" alt="...">
+                    <h3 class="custom-heading-font fw-semibold fs-4 mb-1 custom-cursor-pointer">Mindful Eating</h3>
+                    <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated Feb 26, 2024 </p>
+                  </div>
+                </div>
+                <div id="s8p6" class="container-fluid d-flex justify-content-center custom-cursor-pointer pt-2"> <!-- this div contains two parts-->
+                  <div class="container-fluid">
+                    <img src="https://i.tribune.com.pk/media/images/1---Copy1704116305-0/1---Copy1704116305-0-196x127.webp" alt="...">
+                    <h3 class="custom-heading-font fw-semibold fs-5 mb-1 custom-cursor-pointer">Tuscany’s Charms</h3>
+                    <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated Feb 05, 2024 </p>
+                  </div>
+                  <div class="container-fluid">
+                    <img src="https://i.tribune.com.pk/media/images/011695667107-0/011695667107-0-196x127.webp" alt="...">
+                    <h3 class="custom-heading-font fw-semibold fs-5 mb-1 custom-cursor-pointer">Sustainable Living: Simple Steps for a Greener and Eco-Friendly Lifestyle
+                    </h3>
+                    <p class="text-muted mb-2 mt-4" style="font-size: 11px;">Updated Feb 26, 2024 </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+        </main>
+
+        <section class="cards">
+          <div id="9th-main-sec" class="container d-flex p-0 justify-content-between mt-3 border-2 border-end"> <!--fifth section of main starts here-->
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--first card-->
+              <img src="https://i.tribune.com.pk/media/images/Food-waste1711560658-0/Food-waste1711560658-0-198x140.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">'Just staggering': UN says households waste 1b meals a day</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 13 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">UN's latest Food Waste Index Report says over $1 trillion worth of food binned while nearly 800M people face hunger</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--second card-->
+              <img src="https://i.tribune.com.pk/media/images/Dutch-Prime-Minister-Mark-Rutte-China's-President-1711553289-1/Dutch-Prime-Minister-Mark-Rutte-China's-President-1711553289-1-198x140.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Dutch PM downplays conflict over ASML after meeting with China's Xi</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 14 hours ago</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">President Xi told Chinese state media he has warned Rutte against 'decoupling and breaking links' with China</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--third card-->
+              <img src="https://i.tribune.com.pk/media/images/IMG_63991699242978-0/IMG_63991699242978-0-198x140.webp" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Musk's xAI to enable chatbot Grok for all premium subscribers of X</h3>
+                <p class="text-muted" style="font-size: 11px;">Updated 27 March, 2024</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Elon Musk to enable his startup xAI's chatbot, Grok, for all premium subscribers on platform X</p>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0" style="width: 18rem;"><!--fourth card-->
+              <img src="https://i.tribune.com.pk/media/images/1848563-tz__lynxnpeeaeum_rtroptp__nvidiaresults_original-1542362406/1848563-tz__lynxnpeeaeum_rtroptp__nvidiaresults_original-1542362406-198x140.jpg" class="card-img-top custom-cursor-pointer custom-image-card-size" alt="...">
+              <div class="card-body px-0 pt-1">
+                <h3 class="custom-font-size-for-second-news-boxes custom-cursor-pointer">Behind the plot to break Nvidia's grip on AI by targeting software
+                  </h3>
+                <p class="text-muted" style="font-size: 11px;">Updated Mar 26, 2024</p>
+                <p class="custom-caption-font mb-2" style="font-size:13px">Nvidia earns $2.2 trillion market cap with AI chip production, powering a new era of generative AI developers </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer> <!-- footer of the website-->
+          <div class="container-fluid custom-bg-black text-white">
+            <div class="container">
+              <div id="fp-1" class="container-fluid d-flex pt-4"> <!-- id means footer part 1-->
+                <div class="container custom-cursor-pointer">
+                  <p class="mb-2" style="font-size: 13.5px;">Pakistan</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Business</p>
+                  <p class="mb-2" style="font-size: 13.5px;">World</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Opinion</p>
+                </div>
+                <div class="container custom-cursor-pointer">
+                  <p class="mb-2" style="font-size: 13.5px;">Life & Style</p>
+                  <p class="mb-2" style="font-size: 13.5px;">T.Edit</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Sports</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Blog</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Videos</p>
+                </div>
+                <div class="container custom-cursor-pointer">
+                  <p class="mb-2" style="font-size: 13.5px;">Prayer Timing Pakistan</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Ramzan Calendar Pakistan</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Weather Forecast Pakistan</p>
+                </div>
+                <div class="container custom-cursor-pointer dip">
+                  <p class="mb-2" style="font-size: 13.5px;">About Us</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Online Advertising</p>
+                  <p class="mb-2" style="font-size: 13.5px;">RSS Feeds</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Subscribe to the Paper</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Contact Us</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Careers</p>
+                </div>
+                <div class="container custom-cursor-pointer dip">
+                  <p class="mb-2" style="font-size: 13.5px;">Style Guide</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Privacy Policy</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Copyright</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Code of ethics</p>
+                  <p class="mb-2" style="font-size: 13.5px;">Mobile App</p>
+                </div>
+                <div class="container-fluid dip" style="width: 200%">
+                  <p class="custom-heading-font fs-2 text-white">FOLLOW US</p>
+                  <ul class="d-flex list-style-none px-0">
+                    <li class="mx-1">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAYFBMVEU6VZ////80UZ309vqToMfM0uQyT5xbcK0uTZyXpMu5wNna3eni5fB0hLdida5SaqogRJjq7PRNZaehq80oSZpAW6NqfbN7i7qwudW+xdzGzeERPJRIYKSpss+LmcTU2OfuBL5hAAAC6klEQVR4nO3c23KrIACFYYuKxmM8RGu2ie//lm3vOtNNQDLA0ln/fWf4xgNGsFHEGGOMMcYYY4wxxtj5EkLmL5Khx2eaGK+juPXZVKubbqFHaVR+jebHZ7Hct7JS1qWtCD1QbfJfPhdbF3/oqjL0Ey2X02IAOQImF3VqBDkARtaLMQUbI0RTdDssyBhxe5Z7KMgYuQ67DgsyRrafZrewA2DEZH4TQ8fIZuflAoyR62ZhAcWMe2YXcMz1YWWBxIyJnQURk9d75xdcjOzvlhZATPTcPVnCYkRrMVuiYvKL9YGBw8jMarrExIyDvQUNI+xvZXiYvLa/YuAw0TtnGRjmvbMMDTPZPskAYqLknUvmo4PC3ArDYcfVlv6t6IHeNYvV7FGmHOYma//Whwb8TvQmv/y7pI+klOI/hQb8TrSVwWHJJNSglTV6TNrnoUdpltT/xiyng1giOevuzPEl9BiNk9ppJs2Ocb18J3SYeDjGEuxPWkw3H+bA6DHVYS5/A8zWID18vU6LSaGeJF9HDGrEoEYMasSgRgxqxKBGDGrEoEYMasQETvnZyKjHjK8+OfH/Uk2s80VRotsAWA2J6m9/arxrpMG6hWVP768I7TbGGjWfCFNN3m8P7jCb//UOd5i7/5Vzd5jCN8Ul5uF/nnGHGU6EiZ/+n3WcYar5RJhyOtFpFmCacYe5ryfCLLfzYOJHgA0PzjAhttW4wnTPALs3XGGq+kyYELs3XGG29kSYJcQ+YEeY+HP1b3GGGQJYnGGSEPvqXGH8v2dyh+nqE2HKIJsEHWHuIaYZV5giwA8AZ5gA75kiZ6sAjzEERrRDoUr39Wy3KP80yJ35O+XK11X3wXnaXg/zj9q0HzYArmkqO+ICrTJiUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY1YlAjBjViUCMGNWJQIwY155gvTt5IUAsJbbkAAAAASUVORK5CYII=" alt=".." class="custom-cursor-pointer" style="width:30px;">
+                    </li>
+                    <li class="mx-1">
+                      <img src="data:image/png;base64,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" alt=".." class="custom-cursor-pointer" style="width:30px;">
+                    </li>
+                    <li class="mx-1">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAclBMVEX/AAD/////x8f/Kyv/UlL//Pz/R0f/SUn/4+P/+Pj/bW3/w8P/19f/5ub/8fH/zMz/OTn/Tk7/Pz//3d3/6+v/ubn/YmL/aGj/kJD/r6//dnb/WFj/GRn/Jib/NDT/Q0P/fX3/ior/mZn/pKT/Dg7/g4MFmX3DAAADvElEQVR4nO3bbXOyOBgFYAQUEIQg8ibyrv//Lz7B7s62ne5sCM2xnT3Xp44zdnqUJnfuJJZFRERERERERERERERERERERERERERERET/U7fW6cS591LXdZumKIqyLI8fyBdK+XrTuG7q9f1ZdO3t/uo/+53b2S2vw1hV1TTXeR4mSRRlWeafLnEcB8F+sVssPwRBIF+9nHw/i6IkscOwrudJvnccjkUqXpurnOo8ifw42G0VX7LIzucqfVWUIfT3m1N8FER584oorR1/c5I3pxqfxYuMRJH2NjrL2VgWCZzmbhvMstthn7TZaJbdpQRmSU0+ZIsQGGY0nGXnF7AsbW06zG6ChekT42HyGyqMmxkPE7moMIWZuf+9+IoKc/zukuwLFSrM1XwW3AiACJM7oDADIEzSg8JUgDA+aF1zmwBhYlANcFMtM7P6op8GNDYrVzOhc8x/ehhH9S+0HcspdQvsAROmC9XDWJYY9Ho3IyiM6jLTfpsrhFaRPWFKTaFaNNt/T3w6ZXbdQsIoNzPsf2bxY7a2ngOVADphLGv214UJO0wY1eXMhzCWyFfNOjYmTK/6GdufnpRruGIhlIifHca6P9RHgugMCXM46YaRj2il+klkmDCe6rP/RRjrns5q45qPWQNsCiPrVKFUQZwOkDCp6r/x12Hkt+Mp/AZQmI3fzDPOf1dEF+93hHFKhdrzd4RpG6XxGfSYHbTnGele1IqjGSaM/qQpv9VZdZICDc29Xm0m3Sf1dWeGCaNXNUtDtGLRCSpnhF6Yc7Kq3x5hCs31K81FvXLrAFQ1r+0BLIbVuyCgxdmaVtPTvdDYnQItm9eGabQ6gaCGhnJH8xkmrfT6ZjOm1aTcOJdhxEN3/xPUN1Pe0gidQf9YCqijqbzZ5K9pYHw2gMIgtgFRuwCYMEdQGJW11VYB6mBTo1rGb4Da0zR/QktKMGszWWmq7jZtkGNKsxU7tBvMsBPbgL1z2NkZ62H8JND+AQujU9Kvk+HONd71t/cV5cBLDqPh43Mxqsx8Mjw4I48CyyJg5XbrOj7shOabh8EH7YIbyv4yGvtufHgWOT7bRornwMaNyu9V4YbzZF+75Lip/5P2OE51+B2XzoI4i8J6Go+YBtO/BhJpU5TX6/Wx3Aes89B+Xgj0T8/7gHH8/jbgfr/cBjydnpcB7TDM63mexkG+uSxcT7w2yCe3W9s6XSeEOPf94eB5qeR+lKbe4bBc0RRd1zntz7qnSURERERERERERERERERERERERERERET0C/wB3oJE/NtufE4AAAAASUVORK5CYII=" alt=".." class="custom-cursor-pointer" style="width:30px;">
+                    </li>
+                    <li class="mx-1">
+                      <img src="data:image/png;base64,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" alt=".." class="custom-cursor-pointer" style="width:30px;">
+                    </li>
+                    <li class="mx-1">
+                      <img src="data:image/jpeg;base64,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" alt=".." class="custom-cursor-pointer" style="width:30px;">
+                    </li>
+                  </ul>
+                  <div class="container-fluid d-flex mx-0 px-0">
+                    <img alt="Tribune Apple" src="https://i.tribune.com.pk/logo/apple.webp" width="140" height="40" class="me-2">
+                    <img alt="Tribune android" src="https://i.tribune.com.pk/logo/android.webp" width="140" height="40">
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid mt-2 d-flex justify-content-center pb-4">
+                <div class="container mx-0 px-0" style="width:15%;">
+                  <img class=" ls-is-cached lazyloaded" width="113" height="31" src="https://i.tribune.com.pk/assets/images/footer-tribune.logo.webp" alt="">
+                </div>
+                <div class="container-fluid mx-0 px-0 d-flex dip">
+                  <p style="font-size: 13.5px;" class="pt-2">This material may not be published, broadcast, rewritten,
+                    redistributed or derived from. Unless otherwise stated, all content is
+                    copyrighted © 2024 The Express Tribune.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

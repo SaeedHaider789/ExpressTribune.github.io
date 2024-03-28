@@ -1,0 +1,50 @@
+@media screen and (max-width: 940px) {
+    .responsive-custom-margin{
+        margin: 0px !important;
+    }
+}
+@media screen and (max-width: 990px) {
+    .custom-visibility-nav-dropdown{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 1198px) {
+    .display-none{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #s1n3{
+        display: flex;
+        justify-content:flex-start;
+    }
+    #third-sec{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 520px) {
+    #truck-image{
+        width: 300px !important;
+    }
+}
+@media screen and (max-width: 340px) {
+    #truck-image{
+        width: 280px !important;
+    }
+    .s3n1 img{
+        width: 180px !important;
+    }
+}
+@media screen and (max-width: 320px) {
+    #truck-image{
+        width: 200px !important;
+    }
+    .s3n1 img{
+        width: 200px !important;
+    }
+}
+@media screen and (max-width: 780px) {
+    .dip{
+        display: none !important;
+    }
+}

@@ -1,0 +1,37 @@
+.custom-font{
+    font-size: 9px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.custom-bg-black{
+    background-color: black;
+}
+.custom-image-size{
+    width: 20px;
+}
+.custom-font-for-main-nav{
+    font-size: 12px;
+}
+.custom-visibility-nav-dropdown{
+    display: none !important;
+}
+.custom-heading-font{
+    font-family: 'Playfair Display';
+    font-weight: 450;
+}
+.custom-caption-font{
+    font-family: georgia;
+}
+.list-style-none{
+    list-style: none;
+}
+.custom-font-size-for-second-news-boxes{
+    font-size: 18px;
+}
+.custom-cursor-pointer{
+    cursor: pointer;
+}
+.custom-image-card-size{
+    height: 200px ;
+}
