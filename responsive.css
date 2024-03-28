@@ -43,7 +43,7 @@
         width: 200px !important;
     }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1000px) {
     .dip{
         display: none !important;
     }
