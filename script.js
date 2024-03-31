@@ -7,6 +7,13 @@ window.addEventListener('resize', function() {
   // Resize logic for the eighth section
   resizeEighthSection();
 });
+// Resize logic for the first section
+resizeFirstSection();
+// Resize logic for the second section
+resizeSecondSection();
+// Resize logic for the eighth section
+resizeEighthSection();
+
 
 // Function to resize the first section
 function resizeFirstSection() {
